@@ -257,14 +257,14 @@ export default function MainAside() {
           <div className="row">
             <div className="col-5 location">
               <h1 className="text-start ps-4" id="location">
-                Kisumu
+                Abuja
               </h1>
             </div>
             <div className="col-2 time" id="time">
-              20:53
+              19:06
             </div>
             <div className="col-4 text-end m-auto" id="date">
-              February 9, 2024
+              February 11, 2024
             </div>
           </div>
         </header>
@@ -342,7 +342,7 @@ export default function MainAside() {
                 <img src={icon} alt="Weather Icon" />
               </div>
               <div className="city-country m-auto d-none d-md-flex" id="city">
-                Kisumu, Kenya
+                Abuja, Nigeria
               </div>
             </div>
             <div className="current-temp">
