@@ -38,6 +38,14 @@ export default function MainAside() {
     let currentTemperature = Math.round(response.data.temperature.current);
     let convertedTemperature = Math.round(currentTemperature * 1.8 + 32);
 
+    const nigerianCities = ["Lagos", "Abuja", "Port Harcourt", "Ibadan", "Kano", "Benin City", "Jos", "Kaduna"]; // Add more cities as needed
+
+setWeatherData({
+  ready: true,
+  location: nigerianCities.includes(response.data.city) ? response.data.city : "Unknown Location",
+});
+
+
     setWeatherData({
       ready: true,
       location: response.data.city,
